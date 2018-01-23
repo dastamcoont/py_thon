@@ -378,3 +378,36 @@ for i in range(1, 11):
     f.write(data)
 f.close()
 
+# In[58]:
+
+
+import cx_Oracle
+
+
+# In[63]:
+
+
+con = cx_Oracle.connect('busan30/busan30@164.125.69.75/XE')
+
+
+# In[64]:
+
+
+
+print("Connected to Oracle: " + con.version)
+
+
+# In[65]:
+
+
+sql = "select * from EMP"
+curs = con.cursor()
+curs.execute(sql)
+
+
+# In[66]:
+
+
+for row in curs:
+    print(row)
+
