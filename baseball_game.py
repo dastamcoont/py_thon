@@ -338,14 +338,7 @@ def main():
                      break
                 else:
                      print("Wrong Input, Input again")
-                
-    # ===Modify codes below=============
-    # 위의 코드를 포함하여 자유로운 수정이 가능함
 
-    
-    
-
-    # ==================================
     print("Thank you for using this program")
     print("End of the Game")
 
